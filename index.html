@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html manifest="" lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Dishes</title>
+    <style type="text/css">
+         html, body {
+            background-color: white;
+        }
+		
+		#appLoadingIndicator {
+			position: absolute;
+			width: 500px;
+			height: 300px;
+			left: 50%;
+			margin-left: -250px;
+			top: 50%;
+			margin-top: -150px;
+			background: url('resources/images/water_tap.png') no-repeat 165px top;
+			background-size: 100px 75px;
+		}
+		
+		#appLoadingIndicator #bac {
+			position: absolute;
+            bottom: 0;
+			left: 50%;
+            margin-top: -75px;
+			margin-left: -75px;
+			border-radius: 50%;
+			width: 150px;
+			height: 150px;
+			background-color: white;
+			overflow: hidden;
+			-webkit-backface-visibility: hidden;
+			-webkit-transform: translate3d(0, 0, 0);
+		}
+		
+		#appLoadingIndicator #bac .fill {
+			-webkit-transform: translateY(150px);
+			-webkit-animation-name: fillAction;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: cubic-bezier(.2, .6, .8, .4);
+			-webkit-animation-duration: 4s;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay: 0.25s;
+			-webkit-animation-iteration-count: infinite;
+		}
+		
+		#appLoadingIndicator .pour {
+			width: 6px;
+			position: absolute;
+			left: 50%;
+			margin-left: -3px;
+			bottom: 0;
+			top: 75px;
+			background: #04ACFF;
+			z-index: 10;
+			-webkit-animation-name: pourAction;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-duration: 0.25s;
+		}
+		
+		#appLoadingIndicator #bac #waveShape {
+			-webkit-animation-name: waveAction;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-duration: 0.5s;
+			width: 300px;
+			height: 150px;
+			fill: #04ACFF;
+		}
+		
+		@-webkit-keyframes pourAction {
+			0% {
+				bottom: 250px;
+			}
+			100% {
+				bottom: 0;
+			}
+		}
+		
+		@-webkit-keyframes fillAction {
+			0% {
+				-webkit-transform: translateY(150px);
+			}
+			100% {
+				-webkit-transform: translateY(-5px);
+			}
+		}
+		
+		@-webkit-keyframes waveAction {
+			0% {
+				-webkit-transform: translate(-150px, 0);
+			}
+			100% {
+				-webkit-transform: translate(0, 0);
+			}
+		}
+    </style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.6.1/fabric.min.js"></script>
+	
+    <!-- The line below must be kept intact for Sencha Command to build your application -->
+    <script id="microloader" type="text/javascript" src=".sencha/app/microloader/development.js"></script>
+</head>
+<body>
+    <div id="appLoadingIndicator">
+		<div class="pour"></div>
+		<div id="bac">
+			<div class="fill">
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+					<path fill="#04ACFF" id="waveShape" d="M300,300V2.5c0,0-0.6-0.1-1.1-0.1c0,0-25.5-2.3-40.5-2.4c-15,0-40.6,2.4-40.6,2.4
+						c-12.3,1.1-30.3,1.8-31.9,1.9c-2-0.1-19.7-0.8-32-1.9c0,0-25.8-2.3-40.8-2.4c-15,0-40.8,2.4-40.8,2.4c-12.3,1.1-30.4,1.8-32,1.9
+						c-2-0.1-20-0.8-32.2-1.9c0,0-3.1-0.3-8.1-0.7V300H300z" />
+				</svg>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

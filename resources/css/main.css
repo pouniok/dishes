@@ -1,0 +1,223 @@
+.x-menu {
+    padding: 0.7em;
+    background-image: none;
+    background-color: #111;
+	color: #EEE;
+	min-width: 300px;
+}
+
+.x-menu .x-button {
+	background-image: none;
+	background: transparent;
+	color: #EEE;
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid #666;
+}
+
+.x-menu .x-button:last-child {
+	border-bottom: 0;
+}
+
+.x-menu .x-button-label {
+	text-align: left;
+	font-weight: normal;
+}
+
+.x-toolbar-dark {
+    background-image: none;
+    background-color: white;
+    border: none;
+}
+
+.x-toolbar-dark .x-title {
+    color: #333;
+    text-shadow: none;
+	font-weight: normal;
+}
+
+.x-toolbar.x-docked-top {
+    border-bottom: 0;
+}
+
+.x-toolbar .x-button, .x-toolbar-dark .x-button.x-button-pressing {
+	background-image: none;
+	background: transparent;
+	color: #333;
+	border: none;
+}
+
+.x-button .x-button-icon:before {
+	font: normal normal normal 24px/1 FontAwesome;
+}
+
+.x-layout-card-item {
+   background: white;
+}
+
+.x-list {
+    background-color: transparent;
+}
+
+.present-item {
+  position: relative;
+  width: 100px;
+  height: 80px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.employee-selected .fa-circle {
+	color: #69B055 !important;
+}
+
+.selected {
+  opacity: 0.6;
+}
+
+.selected .present-item:after {
+  font-family: "FontAwesome";
+  content: "\f05e";
+  position: absolute;
+  font-size: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: red;
+}
+
+.x-list-normal .x-list-item.x-item-selected.x-list-item-tpl, .x-list-normal .x-list-item.x-item-selected .x-dock-horizontal {
+    border-top-color: #CCC;
+}
+.x-list .x-list-item.x-item-selected .x-dock-horizontal, .x-list .x-list-item.x-item-selected.x-list-item-tpl {
+    background-image: none;
+    background-color: #EEE;
+    color: white;
+}
+
+.x-panel.x-floating, .x-msgbox, .x-form.x-floating {
+    background-color: #333;
+}
+
+.x-webkit .x-anchor.x-anchor-top {
+    background-color: #333;
+}
+
+.x-button, .x-button.x-button-back:after, .x-button.x-button-forward:after, .x-toolbar .x-button, .x-toolbar .x-button.x-button-back:after, .x-toolbar .x-button.x-button-forward:after {
+    background-image: none;
+    background-color: transparent;
+}
+
+.x-button.x-button-pressing {
+	background-image: none;
+    background-color: transparent;
+}
+
+.x-button, .x-toolbar .x-button {
+    border: 0;
+    color: #333;
+}
+
+.x-panel.x-floating, .x-msgbox, .x-form.x-floating {
+    background-color: #fff;
+}
+.x-msgbox {
+    border: none;
+}
+
+.x-button.x-button-action, .x-toolbar .x-button.x-button-action, .x-button.x-button-action-round, .x-toolbar .x-button.x-button-action-round, .x-button.x-button-action-small, .x-toolbar .x-button.x-button-action-small {
+    border: none;
+    background-color: transparent;
+    color: #333;
+}
+.x-button.x-button-action, .x-button.x-button-action.x-button-pressing, .x-button.x-button-action.x-button-back:after, .x-button.x-button-action.x-button-forward:after, .x-toolbar .x-button.x-button-action, .x-toolbar .x-button.x-button-action.x-button-back:after, .x-toolbar .x-button.x-button-action.x-button-forward:after, .x-button.x-button-action-round, .x-button.x-button-action-round.x-button-back:after, .x-button.x-button-action-round.x-button-forward:after, .x-toolbar .x-button.x-button-action-round, .x-toolbar .x-button.x-button-action-round.x-button-back:after, .x-toolbar .x-button.x-button-action-round.x-button-forward:after, .x-button.x-button-action-small, .x-button.x-button-action-small.x-button-back:after, .x-button.x-button-action-small.x-button-forward:after, .x-toolbar .x-button.x-button-action-small, .x-toolbar .x-button.x-button-action-small.x-button-back:after, .x-toolbar .x-button.x-button-action-small.x-button-forward:after {
+    background-image: none;
+    background-color: transparent;
+
+}
+
+.x-button.x-button-action.x-button-pressing, .x-button.x-button-action.x-button-pressing:after, .x-button.x-button-action.x-button-pressed, .x-button.x-button-action.x-button-pressed:after, .x-button.x-button-action.x-button-active, .x-button.x-button-action.x-button-active:after, .x-toolbar .x-button.x-button-action.x-button-pressing, .x-toolbar .x-button.x-button-action.x-button-pressing:after, .x-toolbar .x-button.x-button-action.x-button-pressed, .x-toolbar .x-button.x-button-action.x-button-pressed:after, .x-toolbar .x-button.x-button-action.x-button-active, .x-toolbar .x-button.x-button-action.x-button-active:after, .x-button.x-button-action-round.x-button-pressing, .x-button.x-button-action-round.x-button-pressing:after, .x-button.x-button-action-round.x-button-pressed, .x-button.x-button-action-round.x-button-pressed:after, .x-button.x-button-action-round.x-button-active, .x-button.x-button-action-round.x-button-active:after, .x-toolbar .x-button.x-button-action-round.x-button-pressing, .x-toolbar .x-button.x-button-action-round.x-button-pressing:after, .x-toolbar .x-button.x-button-action-round.x-button-pressed, .x-toolbar .x-button.x-button-action-round.x-button-pressed:after, .x-toolbar .x-button.x-button-action-round.x-button-active, .x-toolbar .x-button.x-button-action-round.x-button-active:after, .x-button.x-button-action-small.x-button-pressing, .x-button.x-button-action-small.x-button-pressing:after, .x-button.x-button-action-small.x-button-pressed, .x-button.x-button-action-small.x-button-pressed:after, .x-button.x-button-action-small.x-button-active, .x-button.x-button-action-small.x-button-active:after, .x-toolbar .x-button.x-button-action-small.x-button-pressing, .x-toolbar .x-button.x-button-action-small.x-button-pressing:after, .x-toolbar .x-button.x-button-action-small.x-button-pressed, .x-toolbar .x-button.x-button-action-small.x-button-pressed:after, .x-toolbar .x-button.x-button-action-small.x-button-active, .x-toolbar .x-button.x-button-action-small.x-button-active:after {
+    background-image: none;
+    background-color: #887251;
+	color: white;
+}
+
+.x-msgbox-dark .x-msgbox-text {
+    color: #333;
+    text-shadow: none;
+}
+
+.x-toast {
+    border: none;
+	background-color: #BF4949;
+	padding: 30px;
+	color: white;
+}
+
+.x-toast.toast-success {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background-color: #69B055;
+	font-size: 8em;
+	min-width: 0;
+}
+
+.x-toast.toast-birthday {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background-color: #fff;
+	color: #333;
+	font-size: 2em;
+	min-width: 0;
+	word-break: break-all;
+}
+
+.x-toast.toast-warning {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background-color: #E68101;
+	font-size: 8em;
+	min-width: 0;
+}
+
+.x-toast.toast-error {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background-color: #F46660;
+	font-size: 8em;
+	min-width: 0;
+}
+
+.paper {
+	background: url('../images/linedpaper.png');
+	font-size: 14px;
+}
+
+.paper  h2 {
+	color: #333;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.paper h1 {
+	color: #887251;
+	font-size: 20px;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.paper ul {
+	padding-left: 20px;
+}
+
+.paper p {
+	padding: 5px 0;
+}
+
