@@ -17,6 +17,3 @@ Liste des utilisateurs et historique
 
 Menu de l'application  
 ![dishes_menu](https://github.com/user-attachments/assets/1ef0b77b-566c-4ab6-ba6b-2bc812230fd9)
-
-Règlement  
-![dishes_legal](https://github.com/user-attachments/assets/bdb29597-7600-4672-ab00-9048b3e5aaf6)
